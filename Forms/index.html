@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Forms</h1>
+    </header>
+
+    <!-- Main -->
+
+    <main>
+      <!-- Action in form 
+        Action attribute is used to define what action needs to be performed
+        when a form is submitted -->
+      <form action="/action.php">
+        <label for="fname"> First Name : </label>
+        <input
+          type="text"
+          placeholder="Enter your first name"
+          id="fname"
+        /><br /><br />
+
+        <label for="lname"> Last Name : </label>
+        <input type="text" placeholder="Enter your last name" id="lname" />
+        <br /><br />
+
+        <label for="email"> Email : </label>
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          id="email"
+        /><br /><br />
+
+        <label for="password"> Password : </label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          id="password"
+        />
+        <br /><br />
+
+        <!-- In this way only select when click on radio button -->
+        <input type="radio" value="class XI" name="class" /> Class XI<br />
+        <input type="radio" value="class XII" name="class" /> Class XII<br /><br /><br />
+
+        <!-- In this way if we click on texts then radio will be selected -->
+        <label for="101">
+          <input type="radio" value="class XI" name="class1" id="101" /> Class
+          XI <br />
+        </label>
+        <label for="102">
+          <input type="radio" value="class XII" name="class1" id="102" /> Class
+          XII <br /><br />
+        </label>
+
+        <!-- we can assign class & id to an element for example:
+        <div class="grp1" id="id1"> 
+
+         </div>
+         div class="grp1" id="id2"> 
+            
+         </div>
+         -->
+
+         <!-- Checkboxes -->
+         <label for="math">
+            <input type="checkbox" value="Math" name="subject" id="math"> Math
+          </label>
+          <label for="phy">
+            <input type="checkbox" value="Physics" name="subject" id="phy"> Physics
+          </label>
+          <label for="urdu">
+            <input type="checkbox" value="Urdu" name="subject" id="urdu"> Urdu
+          </label><br><br>
+
+          <!-- TextArea -->
+           <textarea name="feedback" id="101" style="text-align: left; height: 100px; width: 200px;">
+            Enter some feedback here....
+           </textarea>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      style="
+        padding: 20px;
+        margin-top: 20px;
+        background-color: red;
+        border: 2px solid orange;
+        border-radius: 10px;
+        color: white;
+        text-decoration: underline;
+      "
+    >
+      <h2>Forms</h2>
+      <p>Login</p>
+      <p>Signup</p>
+      <p>Your Form</p>
+      <p>My Form</p>
+    </footer>
+  </body>
+</html>
